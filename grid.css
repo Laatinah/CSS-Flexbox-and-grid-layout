@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: darkblue;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  
+}
+nav a {
+  display: block;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: deeppink;
+  color: white;
+}
+nav a:hover {
+  background-color: lightcyan;
+  color: black;
+}
+main {
+  display: grid;
+  grid-template-areas:
+  "RED RED RED ORANGE ORANGE"
+  "GREEN GREEN BLUE1 BLUE1 BLUE1"
+  "GREEN GREEN BLUE2 BLUE2 BLUE2"
+  ;
+  gap: 10px;
+  width: 50%;
+  
+}
+main div{
+  padding: 3em;
+}
+.red{
+  background-color: red;
+  grid-area: RED;
+  color: red;
+}
+.orange{
+  background-color: orange;
+  grid-area: ORANGE;
+  color: orange;
+}
+.green{
+  background-color: green;
+  grid-area: GREEN;
+  color: green;
+}
+.blue1{
+  background-color: #5aabd3;
+  grid-area: BLUE1;
+  color: #5aabd3;
+}
+.blue2{
+  background-color: #5aabd3;
+  grid-area: BLUE2;
+  color: #5aabd3;
+}

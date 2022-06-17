@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .container{
+    flex-direction: column;
+    flex: 100%;
+  }
+}
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --darker-cyan: hsla(179, 100%, 13%);
+  --white: hsl(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+body {
+  font-size: 15px;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav a {
+  display: block;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--dark-cyan);
+  color: white;
+}
+nav a:hover {
+  background-color: var(--orange);
+  color: var(--dark-cyan);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.first {
+  background-color: var(--orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 25%;
+}
+.second {
+  background-color: var(--dark-cyan);
+  width: 25%;
+}
+.third {
+  background-color: var(--darker-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 25%
+}
+p {
+  color: var(--white);
+  margin: 20px 60px;
+  font-family: "Lexend Deca";
+}
+img {
+  margin: 40px 0 0 60px;
+}
+h1 {
+  color: var(--light-gray);
+  margin: 40px 60px;
+  font-family: "Big Shoulders Display";
+}
+button {
+  background-color: var(--light-gray);
+  border: none;
+  margin: 60px 0 40px 60px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+}
+.first button {
+  color: var(--orange);
+}
+.second button {
+  color: var(--dark-cyan);
+}
+.third button {
+  color: var(--darker-cyan);
+}
+button:hover{
+  background: none;
+  color: var(--light-gray);
+  border: 1px solid var(--light-gray)
+}
